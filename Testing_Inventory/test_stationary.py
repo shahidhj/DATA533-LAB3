@@ -6,7 +6,7 @@ Created on Wed Dec  4 15:59:17 2019
 """
 
 import unittest
-import stationary
+import LibraryManagement.Inventory.stationary
 
 class TestStationary(unittest.TestCase):
     def setUp(self):

@@ -6,7 +6,7 @@ Created on Wed Dec  4 13:27:15 2019
 """
 
 import unittest
-import literature
+import LibraryManagement.Inventory.literature
 
 class TestLiterature(unittest.TestCase):
     def setUp(self):

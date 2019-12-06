@@ -6,8 +6,8 @@ Created on Wed Dec  4 17:49:52 2019
 """
 
 import unittest
-from test_literature import TestLiterature
-from test_stationary import TestStationary
+from Testing_Inventory.test_literature import TestLiterature
+from Testing_Inventory.test_stationary import TestStationary
 
 def my_suite():
     suite = unittest.TestSuite()
