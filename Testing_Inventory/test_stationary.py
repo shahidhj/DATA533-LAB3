@@ -6,16 +6,16 @@ Created on Wed Dec  4 15:59:17 2019
 """
 
 import unittest
-import LibraryManagement.Inventory.stationary
+import LibraryManagement.Inventory.stationary as statn
 
 class TestStationary(unittest.TestCase):
     def setUp(self):
-        self.pen1 = stationary.Pen("Blue", "gel","uniball",1.20,20)
-        self.pen2 = stationary.Pen("Red", "ball","reynolds",1.10,10)
-        self.pencil1 = stationary.Pencil("Green", "HB", 0.5, "Camlin", 0.25, 25)
-        self.pencil2 = stationary.Pencil("Black", "Click", 0.7, "BIC", 1.00, 15)
-        self.notebook1 = stationary.Notebook("A4", 150, "Classmate", 4.90, 10)
-        self.notebook2 = stationary.Notebook("A3", 100, "Artik", 3.90, 20)
+        self.pen1 = statn.Pen("Blue", "gel","uniball",1.20,20)
+        self.pen2 = statn.Pen("Red", "ball","reynolds",1.10,10)
+        self.pencil1 = statn.Pencil("Green", "HB", 0.5, "Camlin", 0.25, 25)
+        self.pencil2 = statn.Pencil("Black", "Click", 0.7, "BIC", 1.00, 15)
+        self.notebook1 = statn.Notebook("A4", 150, "Classmate", 4.90, 10)
+        self.notebook2 = statn.Notebook("A3", 100, "Artik", 3.90, 20)
         
     def test_sold(self):
         self.pen1.sold(5)

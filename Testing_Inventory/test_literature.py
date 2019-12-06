@@ -6,14 +6,14 @@ Created on Wed Dec  4 13:27:15 2019
 """
 
 import unittest
-import LibraryManagement.Inventory.literature
+import LibraryManagement.Inventory.literature as lit
 
 class TestLiterature(unittest.TestCase):
     def setUp(self):
-        self.book1 = literature.Book("Data Science Book", "Alex", "Science", 99.99, 181, 1100110101, 2016, 8)
-        self.book2 = literature.Book("Ultimate CheatBook", "Zach", "Technology", 59.99, 100, 1010110101, 2019, 2)
-        self.periodical1 = literature.Periodical("Athlon Sports", "John Coon", "Sports", 14.99, 10110110, 2019_04, 5)
-        self.periodical2 = literature.Periodical("Chop Chop", "Sally Sampson", "Cookery", 10.99, 10111110, 2019_11, 1)
+        self.book1 = lit.Book("Data Science Book", "Alex", "Science", 99.99, 181, 1100110101, 2016, 8)
+        self.book2 = lit.Book("Ultimate CheatBook", "Zach", "Technology", 59.99, 100, 1010110101, 2019, 2)
+        self.periodical1 = lit.Periodical("Athlon Sports", "John Coon", "Sports", 14.99, 10110110, 2019_04, 5)
+        self.periodical2 = lit.Periodical("Chop Chop", "Sally Sampson", "Cookery", 10.99, 10111110, 2019_11, 1)
 
     
     def test_issued(self):
