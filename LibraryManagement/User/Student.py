@@ -57,8 +57,6 @@ class Student(Person):
         self.amount = self.amount + fees
         return self.amount
 
-    def getTotalAmountPaid(self):
-        return self.amount
 
     def getBalance(self):
         return self.totalAmount - self.amount

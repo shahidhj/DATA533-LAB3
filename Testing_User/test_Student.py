@@ -54,6 +54,8 @@ class MyTestStudent(unittest.TestCase):
 
     def test_NoDue(self):
         self.assertEqual(self.Student1.getnoDue(),('You need to pay pending amount for No Due certificate which is ', 1200))
+        self.Student2.paySubscriptionFees(1200)
+        self.assertEqual(self.Student2.getnoDue(),"No due pending")
 
     def test_display(self):
         self.assertEqual(self.Student1.display(),(('Name','Shahid','Address','Springfield','Email','shahid.h@abc.com','Gender','M','PhoneNumber','132445'),'Display Amount paid',0,'Status in college','Present Student'))
