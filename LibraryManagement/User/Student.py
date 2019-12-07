@@ -47,10 +47,10 @@ class Student(Person):
     def __init__(self,studentId,name,address,phoneNo,email,gender,status):
         super().__init__(name,address,phoneNo,email,gender)
         self.studentId = studentId
-        self.balance = None
-        self.noDue = None
+        self.balance = 0
+        self.noDue = 0
         self.__status = status
-        self.amount = None
+        self.amount = 0
         self.totalAmount = 1200
 
     def paySubscriptionFees(self,fees):

@@ -60,10 +60,3 @@ class MyTestStudent(unittest.TestCase):
 
 unittest.main(argv=[''], verbosity = 2, exit = False)
 
-
-
-
-
-
-if __name__ == '__main__':
-    unittest.main()

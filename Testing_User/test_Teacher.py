@@ -63,5 +63,3 @@ class MyTeacherTest(unittest.TestCase):
         self.assertEqual(self.Teacher1.display(),(('Name','Khalad',  'Address','UBC Address','Email','Khald@ubc.com', 'PhoneNumber','1234567890','Gender','M'),'subjects thought',[],'Role of the prof','Assistant Professor','Department of the Prof','Computer','employee Id of the Prof','123456','Get Research Areas',[]))
 
 
-if __name__ == '__main__':
-    unittest.main()
