@@ -41,7 +41,6 @@ class Person:
     def display(self):
         return ("Name",self.__name,"Address",self.__address,"Email",self.__email,"PhoneNumber",self.__phoneNo,"Gender",self.__gender)
 
-
 class Teacher(Person):
 
     def __init__(self,name,address,email,gender,phoneNo,employeeId,department,salary,role):
@@ -90,5 +89,6 @@ class Teacher(Person):
     def display(self):
         return (super().display(),"subjects thought",self.getSubjects(),"Role of the prof",self.getRole(),"Department of the Prof",self.getDepartment(),"employee Id of the Prof",self.getEmployeeId(),"Get Research Areas",self.getResearchAreas())
 
+   
 
 

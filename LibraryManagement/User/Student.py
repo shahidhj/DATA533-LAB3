@@ -7,6 +7,7 @@ class Person:
         self.__email = email
         self.__gender = gender
 
+    
     def getName(self):
         return self.__name
 
@@ -43,16 +44,16 @@ class Person:
 
 class Student(Person):
 
-    def __init__(self, studentId, name, address, phoneNo, email, gender, status):
-        super().__init__(name, address, phoneNo, email, gender)
+    def __init__(self,studentId,name,address,phoneNo,email,gender,status):
+        super().__init__(name,address,phoneNo,email,gender)
         self.studentId = studentId
-        self.balance = 0
-        self.noDue = 0
+        self.balance = None
+        self.noDue = None
         self.__status = status
-        self.amount = 0
+        self.amount = None
         self.totalAmount = 1200
 
-    def paySubscriptionFees(self, fees):
+    def paySubscriptionFees(self,fees):
         self.amount = self.amount + fees
         return self.amount
 
@@ -77,7 +78,8 @@ class Student(Person):
         return (super().display(),"Display Amount paid", self.amount,"Status in college", self.__status)
         # print("Display Amount paid", self.amount)
         # print("Status in college", self.__status)
+        
 
-
+  
 
 
