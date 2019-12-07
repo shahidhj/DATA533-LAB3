@@ -1,12 +1,13 @@
 class Person:
 
-    def __init__(self,name,address,phoneNo,email,gender):
+    def __init__(self, name, address, phoneNo, email, gender):
         self.__name = name
-        self.__address =address
+        self.__address = address
         self.__phoneNo = phoneNo
         self.__email = email
         self.__gender = gender
 
+    
     def getName(self):
         return self.__name
 
@@ -22,27 +23,24 @@ class Person:
     def getAddress(self):
         return self.__address
 
-    def setName(self,name):
+    def setName(self, name):
         self.__name = name
 
-    def setGender(self,gender):
+    def setGender(self, gender):
         self.__gender = gender
 
-    def setPhoneNo(self,phoneNo):
+    def setPhoneNo(self, phoneNo):
         self.__phoneNo = phoneNo
 
-    def setEmail(self,email):
+    def setEmail(self, email):
         self.__email = email
 
-    def setAddress(self,address):
+    def setAddress(self, address):
         self.__address = address
 
     def display(self):
-        print("Name",self.__name)
-        print("Address",self.__address)
-        print("Email",self.__gender)
-        print("PhoneNumber",self.__phoneNo)
-        print("Gender",self.__gender)
+        return ("Name", self.__name,"Address", self.__address,"Email", self.__email,"Gender",self.__gender,"PhoneNumber", self.__phoneNo)
+
 
 class Student(Person):
 
@@ -66,24 +64,22 @@ class Student(Person):
         return self.totalAmount - self.amount
 
     def getStatus(self):
-        return self.status
+        return self.__status
 
-    def updateStatus(self,status):
-        self.__status= status
+    def updateStatus(self, status):
+        self.__status = status
 
     def getnoDue(self):
         if self.amount == self.totalAmount:
-            print( "No due pending")
-            return self
-        print("You need to pay pending amount for No Due certificate which is ",self.totalAmount-self.amount)
+            return ("No due pending")
+        return("You need to pay pending amount for No Due certificate which is ", self.totalAmount - self.amount)
 
     def display(self):
-        super().display()
-        print("Display Amount paid",self.amount)
-        print("Status in college",self.__status)
-
-
-
-
-
+        return (super().display(),"Display Amount paid", self.amount,"Status in college", self.__status)
+        # print("Display Amount paid", self.amount)
+        # print("Status in college", self.__status)
         
+
+  
+
+

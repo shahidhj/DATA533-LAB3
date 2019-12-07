@@ -39,13 +39,7 @@ class Person:
         self.__address = address
 
     def display(self):
-        print("Name",self.__name)
-        print("Address",self.__address)
-        print("Email",self.__gender)
-        print("PhoneNumber",self.__phoneNo)
-        print("Gender",self.__gender)
-
-
+        return ("Name",self.__name,"Address",self.__address,"Email",self.__email,"PhoneNumber",self.__phoneNo,"Gender",self.__gender)
 
 class Teacher(Person):
 
@@ -89,13 +83,12 @@ class Teacher(Person):
     def addSubjects(self,subject):
         self.__subjects.append(subject)
 
-    def display(self):
-        super().display()
-        print("subjects thought",self.getSubjects())
-        print("Role of the prof",self.getRole())
-        print("Department of the Prof",self.getDepartment())
-        print("employee Id of the Prof",self.getEmployeeId())
-        print("Get Research Areas",self.getResearchAreas())
+    def getSalary(self):
+        return self.__salary
 
+    def display(self):
+        return (super().display(),"subjects thought",self.getSubjects(),"Role of the prof",self.getRole(),"Department of the Prof",self.getDepartment(),"employee Id of the Prof",self.getEmployeeId(),"Get Research Areas",self.getResearchAreas())
+
+   
 
 
